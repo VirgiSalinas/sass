@@ -1,0 +1,22 @@
+// primero siempre se invoca a los archivos de utilities 
+@use "./utilities/variables";
+@use "./utilities/mixins";
+@use "./utilities/maps";
+
+// segundo se invoca a los archivos base
+
+@use "./base/reset";
+@use "./base/tipografias";
+
+// tercero se invoca layout
+
+@use "./layout/header-index";
+
+// cuarto se invica los componentes 
+
+@use "./component/card";
+@use "./component/navbar";
+
+//por ultimo las media query
+// si es responsive web design => decreciente
+// si es mobile firts => creciente
