@@ -1,0 +1,11 @@
+header{
+    @include flex(row, space-between,center,wrap, none);
+    padding: 10px;
+    .logo-inmo{
+    width: 35px;
+    height: 35px;
+    }
+    
+    background-color: map-get($colors , color2 ) ;
+    
+}

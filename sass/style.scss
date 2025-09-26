@@ -1,21 +1,21 @@
 // primero siempre se invoca a los archivos de utilities 
-@use "./utilities/variables";
-@use "./utilities/mixins";
-@use "./utilities/maps";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
 
-// segundo se invoca a los archivos base
-
-@use "./base/reset";
-@use "./base/tipografias";
+// segundo se invoca a los archivos baimport@import
+@import "./base/reset";
+@import "./base/tipografias";
 
 // tercero se invoca layout
 
-@use "./layout/header-index";
+@import "./layout/header-index";
+@import "./layout/main";
 
 // cuarto se invica los componentes 
 
-@use "./component/card";
-@use "./component/navbar";
+@import "./component/card";
+@import "./component/navbar";
 
 //por ultimo las media query
 // si es responsive web design => decreciente

@@ -2,12 +2,12 @@
 //y le vamos pasando los parametros que vayan cambiando
 //para utilizarlo hay que usarlo en un media y llamarlo como @include flex(wrap,row,center,center, 16px);
 
-@mixin flex($wrap, $direction, $justify, $items, $gap){
+@mixin flex( $direction, $justify, $items, $wrap, $gap){
     display: flex;
-    flex-wrap: $wrap;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $items;
+    flex-wrap: $wrap;
     gap: $gap;
 }
 
