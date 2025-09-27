@@ -206,6 +206,165 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.services {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  flex-wrap: none;
+  gap: none;
+}
+.services .section-title-services {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+.services .services-grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  justify-content: center;
+  align-items: none;
+  gap: 25px;
+  grid-template-areas: "compra-venta asesoramiento-legal" "financiamiento tasaciones";
+}
+.services .services-grid .service-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.services .services-grid .service-card:hover {
+  transform: translateY(-5px);
+}
+.services .services-grid .service-card .service-grid {
+  width: 70px;
+  height: 70px;
+  background-color: #f5f5dc;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
+  margin: 0 auto 15px;
+  font-size: 30px;
+  color: #1e3a8a;
+}
+.services .services-grid .service-card .service-grid h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  margin-bottom: 40px;
+}
+.testimonials .section-title-testimonial {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+.testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: none;
+  justify-content: none;
+  align-items: none;
+  gap: 25px;
+}
+.testimonials .testimonials-grid .testimonial-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonials .testimonials-grid .testimonial-card .testimonial-text {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #687280;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #16a34a;
+}
+.testimonials .testimonials-grid .testimonial-card .testimonial-author {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: none;
+  justify-content: none;
+  align-items: center;
+  gap: 15px;
+}
+.testimonials .testimonials-grid .testimonial-card .testimonial-author .author-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #16A34A;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  gap: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #f5f5dc;
+  padding: 40px 20px;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: none;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: wrap;
+  gap: none;
+  margin: 0 auto;
+}
+footer .footer-container div {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+footer .footer-container div h3,
+footer .footer-container div h4 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+footer .footer-container div p {
+  color: #2c3e50;
+}
+footer .footer-container .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-container .footer-links ul li {
+  margin: 5px 0;
+}
+footer .footer-container .footer-links ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer .footer-container .footer-links ul li a:hover {
+  color: #1e3a8a;
+}
+footer .footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
 .section1 {
   background-color: antiquewhite;
 }
