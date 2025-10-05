@@ -10,8 +10,20 @@
 // tercero se invoca layout
 
 @import "./layout/header-index";
-@import "./layout/main";
-@import "./layout/footer";
+@import "./layout/header-contact";
+@import "./layout/header-inmobiliaria";
+@import "./layout/header-servicios";
+
+@import "./layout/main-index";
+@import "./layout/main-contact";
+@import "./layout/main-inmobiliaria";
+@import "./layout/main-servicios";
+
+
+@import "./layout/footer-index";
+@import "./layout/footer-contact";
+@import "./layout/footer-inmobiliaria";
+@import "./layout/footer-servicios";
 
 // cuarto se invica los componentes 
 

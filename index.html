@@ -12,18 +12,16 @@
 
 <body>
 
-    <header> <!--ARREGLAR MEJOR LOS ESTILOS DE LA NAVBAR-->
+    <header class="navbar">
         <a href="">
             <img class="logo-inmo" src="./css/img/logoinmo.png" alt="">
         </a>
         <nav>
-
-
-            <ul class="navbar"> <!-- lista desordenada ul-->
+            <ul> <!-- lista desordenada ul-->
                 <li><a href="#">Home</a></li>
                 <li><a href="./pages/inmobiliaria.html">Inmobiliaria</a></li>
                 <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -32,16 +30,19 @@
         <section class="hero-section">
             <div class="content">
                 <div class="hero-text">
-                    <h2>Bienes Raíces de Confianza</h2>
+                    <h1>Bienes Raíces de Confianza</h1>
                     <p>Encuentra la propiedad de tus sueños con nuestro equipo de expertos en bienes raíces</p>
                 </div>
                 <a href="" class="cta">BUSCAR ALQUILER</a> <!--mas adelante cambiar por un buscador-->
             </div>
         </section>
 
-        <section class="section-wrapper"><!--MEJORAR EL ESTILO-->
+        <!--SECTION SOLUCIONES-->
+
+        <section class="section-wrapper">
+            <h2 class="section-title">Soluciones Inmobiliarias a tu Medida</h2>
             <div class="section-content">
-                <h1 class="section-title">Soluciones Inmobiliarias a tu Medida</h1>
+
 
                 <p class="section-lead">
                     En el competitivo mercado inmobiliario actual, contar con un equipo de profesionales que te guíe
@@ -50,7 +51,7 @@
                     propiedades.
                 </p>
 
-                <p>
+                <p class="p2">
                     Con años de experiencia en el sector, hemos ayudado a cientos de clientes a encontrar la
                     propiedad perfecta
                     que se adapte a sus necesidades y presupuesto. Nuestro compromiso es brindar un servicio
@@ -58,19 +59,20 @@
                     y transparente en cada transacción.
                 </p>
 
-                <p>
+                <p class="p3">
                     Explora nuestro sitio web para descubrir todos los servicios que tenemos para ofrecerte. Desde
                     asesoramiento legal
                     hasta gestión de propiedades, estamos aquí para hacer que tu experiencia inmobiliaria sea
                     exitosa y sin complicaciones.
                 </p>
 
-                <a href="#servicios" class="btn-primary">Ver servicios</a>
+
             </div>
+            <a href="#servicios" class="btn-primary">Ver servicios</a>
         </section>
 
         <!-- Properties Section -->
-        <section class="properties"><!--CENTRAR TITULO-->
+        <section class="properties">
             <h2 class="section-title">Propiedades Destacadas</h2>
             <div class="properties-grid">
                 <div class="property-card">
@@ -106,36 +108,7 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-
-        <section class="services"> <!--AGREGAR ALGO MAS-->
-            <h2 class="section-title-services">Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card compra-venta">
-                    <div class="service-icon">🏠</div>
-                    <h3>Compra y Venta</h3>
-                    <p>Te ayudamos a encontrar la propiedad perfecta o a vender al mejor precio.</p>
-                </div>
-
-                <div class="service-card asesoria-legal">
-                    <div class="service-icon">📋</div>
-                    <h3>Asesoría Legal</h3>
-                    <p>Nuestros expertos te acompañan en todos los trámites legales.</p>
-                </div>
-
-                <div class="service-card financiamiento">
-                    <div class="service-icon">💰</div>
-                    <h3>Financiamiento</h3>
-                    <p>Te conectamos con las mejores opciones de crédito hipotecario.</p>
-                </div>
-
-                <div class="service-card tasaciones">
-                    <div class="service-icon">🔍</div>
-                    <h3>Tasaciones</h3>
-                    <p>Valoramos tu propiedad con los estándares más precisos del mercado.</p>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- Testimonials Section -->
         <section class="testimonials">

@@ -1,0 +1,63 @@
+footer {
+    background-color: map-get($colors , color2);
+    padding: 40px 20px;
+
+    .footer-container {
+        @include flex(none, space-between, none, wrap, none);
+        margin: 0 auto;
+
+        div {
+            flex: 1 1 250px;
+            margin: 10px;
+
+            h3,
+            h4 {
+                margin-bottom: 10px;
+                color: map-get($colors , color5);
+
+
+            }
+
+            p {
+                color: map-get($colors, color4 );
+            }
+
+        }
+
+        .footer-links {
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin: 5px 0;
+
+                    a {
+                        color: map-get($colors, color4 );
+                        text-decoration: none;
+                        transition: color 0.3s;
+
+                        &:hover {
+                            color: map-get($colors, color3 );
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+}

@@ -1,0 +1,83 @@
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    background-color: #fffcf3;
+
+    .contact-container {
+        background: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 3rem;
+        max-width: 700px;
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            color: #2e392f;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            @include flex(column, none, none, none, 1.5rem);
+
+            .form-group {
+                @include flex(column, none, flex-start, none,none);
+                text-align: left;
+
+                label {
+                    font-weight: 500;
+                    color: #2e392f;
+                    margin-bottom: 0.5rem;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 0.8rem 1rem;
+                    border: 1px solid #d2d0cc;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    color: #333;
+                    background-color: #fafafa;
+                    transition: border 0.3s ease;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #f5b24c;
+                        background-color: #fff;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .btn-submit {
+                background-color: #f5b24c;
+                color: #fff;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                align-self: center;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: darken(#f5b24c, 10%);
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

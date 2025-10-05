@@ -1,0 +1,97 @@
+//hero section
+.hero-section-inmo {
+    background-image: url(img/heroinmo.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    @include flex(none, none, center, none, none);
+    position: relative;
+
+    .content-inmo {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .hero-text-inmo {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 500px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: map-get($colors, color4);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: map-get($colors, color5);
+            line-height: 1.6;
+        }
+    }
+
+
+
+
+}
+
+//cards inmo
+.container-inmo {
+    @include flex(column, none, center, none, 2rem);
+    padding: 3rem 0;
+
+    .card-inmo {
+        @include flex(none, space-between, center,none, 16px);
+        width: 80%;
+        max-width: 1000px;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        padding: 2rem 3rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0, 0.25);
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .inmo-info{
+            width: 60%;
+            h3{
+                font-size: 1.5rem;
+                color: #2e392f;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                color: #555;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        
+        }
+        &.izquierda {
+            flex-direction: row;
+            img{
+                margin-right: 2rem;
+            }
+        }
+        &.derecha {
+            flex-direction: row-reverse;
+            img{
+                margin-left: 2rem;
+            }
+        }
+    }
+}
