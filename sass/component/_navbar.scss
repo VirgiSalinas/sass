@@ -1,7 +1,7 @@
 .navbar {
     @include flex(row, space-between, center, wrap, none);
 
-    background-color: map-get($colors , color1 );
+    background-color: map-get($colors , color1);
     width: 100%;
     height: auto;
     padding: 10px 25px;
@@ -9,29 +9,48 @@
     position: fixed;
     z-index: 100;
 
-    ul {
-        @include flex (row, space-evenly, center, none, 20px);
-        list-style: none;
-        padding: 0;
+    .logo {
+        width: auto;
+    }
 
-        li {
-            margin: 5px 0;
+    nav {
+        width: auto;
 
-            a {
-                color: map-get($colors, color4);
-                text-decoration: none;
-                font-weight: 600;
-                padding: 10px 20px;
-                border-radius: 4px;
-                transition: all 0.3s ease;
-                position: relative;
+        ul {
+            @include flex (row, space-evenly, center, none, 20px);
+            list-style: none;
+            padding: 0;
 
-                &:hover {
-                    color: #fff;
-                    background-color: map-get($colors, color3);
+            li {
+                margin: 5px 0;
+
+                a {
+                    color: map-get($colors, color4);
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    border-radius: 4px;
+                    transition: all 0.3s ease;
+                    position: relative;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: map-get($colors, color3);
+                    }
                 }
             }
+
+
         }
 
+
+    }
+
+    /* Ícono hamburguesa */
+    &::after {
+        content: "☰";
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
     }
 }

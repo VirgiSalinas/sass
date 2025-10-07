@@ -1,9 +1,9 @@
 //hero section
 .hero-section-services {
-    background-image: url(img/heroservices.jpg);
-    height: 500px;
+    background-image: url(img/heroservices.jpg); 
+    min-height: 70vh;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     @include flex(none, none, center, none, none);
     position: relative;
 
@@ -92,3 +92,4 @@
         }
     }
 }
+

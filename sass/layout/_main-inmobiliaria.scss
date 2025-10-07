@@ -1,9 +1,9 @@
 //hero section
 .hero-section-inmo {
     background-image: url(img/heroinmo.jpg);
-    height: 500px;
+    min-height: 70vh;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     @include flex(none, none, center, none, none);
     position: relative;
 
@@ -18,7 +18,7 @@
         background-color: rgba(255, 255, 255, 0.5);
         padding: 30px;
         border-radius: 8px;
-        max-width: 500px;
+        max-width: 350px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
         h1 {
@@ -95,3 +95,4 @@
         }
     }
 }
+
