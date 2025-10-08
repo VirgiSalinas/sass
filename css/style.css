@@ -113,7 +113,7 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 30px;
   border-radius: 8px;
-  max-width: 350px;
+  max-width: 400px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .hero-section .hero-text h1 {
@@ -903,9 +903,6 @@ footer .footer-bottom {
   color: #fff;
   background-color: #1e3a8a;
 }
-.navbar {
-  /* Ícono hamburguesa */
-}
 .navbar::after {
   content: "☰";
   font-size: 1.5rem;
@@ -913,7 +910,6 @@ footer .footer-bottom {
   display: none;
 }
 
-/* ---------- MEDIA QUERY para mobile ---------- */
 @media (max-width: 320px) {
   .navbar {
     display: flex;
@@ -932,9 +928,6 @@ footer .footer-bottom {
     width: 75px;
     height: 75px;
     margin-bottom: 10px;
-  }
-  .navbar {
-    /* Ocultar el menú por defecto */
   }
   .navbar nav {
     position: relative;
@@ -958,9 +951,6 @@ footer .footer-bottom {
     color: #000;
     font-weight: 500;
   }
-  .navbar {
-    /* Mostrar el ícono hamburguesa */
-  }
   .navbar::after {
     content: "☰";
     font-size: 20px;
@@ -971,91 +961,55 @@ footer .footer-bottom {
   .navbar:hover nav ul {
     display: flex;
   }
-  .section-wrapper {
-    margin: 30px auto;
-    padding: 0 10px;
-  }
-  .section-wrapper .section-title {
-    font-size: 1.5rem;
-  }
-  .section-wrapper .section-title::after {
-    width: 50px;
-    height: 3px;
-    margin: 10px auto;
-  }
-  .section-wrapper .section-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+  .hero-section {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .hero-section .content {
+    width: auto;
+    padding: 0;
+  }
+  .hero-section .hero-text {
+    min-width: 90%;
     padding: 20px;
-    grid-template-areas: "section-lead" "p2" "p3";
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
     text-align: left;
   }
-  .section-wrapper .section-content .section-lead {
+  .hero-section .hero-text h1 {
     font-size: 1rem;
-    padding: 15px;
-    line-height: 1.5;
-  }
-  .section-wrapper .section-content .p2,
-  .section-wrapper .section-content .p3 {
-    padding: 15px;
-    font-size: 0.9rem;
-  }
-  .section-wrapper .btn-primary {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .properties {
-    margin-bottom: 20px;
-    padding: 0 10px;
-  }
-  .properties .section-title {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .properties .section-title::after {
-    width: 50px;
-    height: 3px;
-    margin: 10px auto;
-  }
-  .properties .properties-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    justify-content: none;
-    align-items: 1rem;
-    gap: 20px;
-  }
-  .properties .properties-grid .property-card {
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  }
-  .properties .properties-grid .property-card .property-img {
-    padding-bottom: 60%;
-  }
-  .properties .properties-grid .property-card .property-img img {
-    object-fit: cover;
-  }
-  .properties .properties-grid .property-card .property-content {
-    padding: 15px;
-  }
-  .properties .properties-grid .property-card .property-content h3 {
-    font-size: 1.1rem;
     margin-bottom: 10px;
   }
-  .properties .properties-grid .property-card .property-content p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+  .hero-section .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
-  .properties .properties-grid .property-card .property-content .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    align-self: center;
+  .hero-section .cta {
+    display: flex;
+    justify-content: flex-start;
+    width: 185px;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+  /* === INMOBILIARIA === */
+  .hero-section-inmo {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
   }
   .container-inmo {
     padding: 1.5rem 0;
@@ -1084,6 +1038,60 @@ footer .footer-bottom {
   .container-inmo .card-inmo .inmo-info p {
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+  .hero-section-services {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .services {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    gap: none;
+  }
+  .services .section-title-services {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: none;
+    gap: 15px;
+    grid-template-areas: "compra-venta" "asesoramiento-legal" "financiamiento" "tasaciones";
+  }
+  .services .services-grid .service-card {
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .services .services-grid .service-card .service-grid {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0 auto 10px;
+  }
+  .services .services-grid .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .services .services-grid .service-card p {
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 425px) {
@@ -1105,9 +1113,6 @@ footer .footer-bottom {
     height: 75px;
     margin-bottom: 10px;
   }
-  .navbar {
-    /* Ocultar el menú por defecto */
-  }
   .navbar nav {
     position: relative;
     width: auto;
@@ -1130,9 +1135,6 @@ footer .footer-bottom {
     color: #000;
     font-weight: 500;
   }
-  .navbar {
-    /* Mostrar el ícono hamburguesa */
-  }
   .navbar::after {
     content: "☰";
     font-size: 20px;
@@ -1143,91 +1145,55 @@ footer .footer-bottom {
   .navbar:hover nav ul {
     display: flex;
   }
-  .section-wrapper {
-    margin: 30px auto;
-    padding: 0 10px;
-  }
-  .section-wrapper .section-title {
-    font-size: 1.5rem;
-  }
-  .section-wrapper .section-title::after {
-    width: 50px;
-    height: 3px;
-    margin: 10px auto;
-  }
-  .section-wrapper .section-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+  .hero-section {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .hero-section .content {
+    width: auto;
+    padding: 0;
+  }
+  .hero-section .hero-text {
+    min-width: 90%;
     padding: 20px;
-    grid-template-areas: "section-lead" "p2" "p3";
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
     text-align: left;
   }
-  .section-wrapper .section-content .section-lead {
+  .hero-section .hero-text h1 {
     font-size: 1rem;
-    padding: 15px;
-    line-height: 1.5;
-  }
-  .section-wrapper .section-content .p2,
-  .section-wrapper .section-content .p3 {
-    padding: 15px;
-    font-size: 0.9rem;
-  }
-  .section-wrapper .btn-primary {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    width: 50% px;
-    text-align: center;
-  }
-  .properties {
-    margin-bottom: 20px;
-    padding: 0 10px;
-  }
-  .properties .section-title {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .properties .section-title::after {
-    width: 50px;
-    height: 3px;
-    margin: 10px auto;
-  }
-  .properties .properties-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    justify-content: none;
-    align-items: 1rem;
-    gap: 20px;
-  }
-  .properties .properties-grid .property-card {
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  }
-  .properties .properties-grid .property-card .property-img {
-    padding-bottom: 60%;
-  }
-  .properties .properties-grid .property-card .property-img img {
-    object-fit: cover;
-  }
-  .properties .properties-grid .property-card .property-content {
-    padding: 15px;
-  }
-  .properties .properties-grid .property-card .property-content h3 {
-    font-size: 1.1rem;
     margin-bottom: 10px;
   }
-  .properties .properties-grid .property-card .property-content p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+  .hero-section .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
-  .properties .properties-grid .property-card .property-content .btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    align-self: center;
+  .hero-section .cta {
+    display: flex;
+    justify-content: flex-start;
+    width: 185px;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+  /* === INMOBILIARIA === */
+  .hero-section-inmo {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
   }
   .container-inmo {
     padding: 1.5rem 0;
@@ -1257,8 +1223,112 @@ footer .footer-bottom {
     font-size: 0.9rem;
     line-height: 1.4;
   }
+  .hero-section-services {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .services {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    gap: none;
+  }
+  .services .section-title-services {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .services .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: none;
+    gap: 15px;
+    grid-template-areas: "compra-venta" "asesoramiento-legal" "financiamiento" "tasaciones";
+  }
+  .services .services-grid .service-card {
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .services .services-grid .service-card .service-grid {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0 auto 10px;
+  }
+  .services .services-grid .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .services .services-grid .service-card p {
+    font-size: 0.85rem;
+  }
 }
 @media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 10px 15px;
+    position: relative;
+  }
+  .navbar .logo {
+    width: auto;
+  }
+  .navbar .logo .logo-inmo {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+  }
+  .navbar nav {
+    position: relative;
+    width: auto;
+    text-align: center;
+  }
+  .navbar nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    gap: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  .navbar::after {
+    content: "☰";
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+  }
+  .navbar:hover nav ul {
+    display: flex;
+  }
   .hero-section {
     height: 400px;
     background-position: center center;
@@ -1271,30 +1341,125 @@ footer .footer-bottom {
     padding: 0 15px;
   }
   .hero-section .content {
+    width: auto;
     padding: 0;
   }
-  .hero-section .content .hero-text {
-    max-width: 50%;
+  .hero-section .hero-text {
+    min-width: 90%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     text-align: left;
   }
-  .hero-section .content .hero-text h1 {
-    font-size: 2rem;
+  .hero-section .hero-text h1 {
+    font-size: 1rem;
     margin-bottom: 10px;
   }
-  .hero-section .content .hero-text p {
+  .hero-section .hero-text p {
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.5;
   }
-  .hero-section .content .cta {
+  .hero-section .cta {
     display: flex;
     justify-content: flex-start;
     width: 185px;
     font-size: 0.95rem;
     padding: 10px 18px;
+  }
+  /* === INMOBILIARIA === */
+  .hero-section-inmo {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .container-inmo {
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+  }
+  .container-inmo .card-inmo {
+    flex-direction: column !important;
+    align-items: center;
+    width: 90%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .container-inmo .card-inmo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 1rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container-inmo .card-inmo .inmo-info {
+    width: 100%;
+  }
+  .container-inmo .card-inmo .inmo-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .container-inmo .card-inmo .inmo-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .hero-section-services {
+    height: 400px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: none;
+    gap: none;
+    padding: 0 15px;
+  }
+  .services {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+    flex-wrap: none;
+    gap: none;
+  }
+  .services .section-title-services {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .services .services-grid {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: none;
+    gap: 15px;
+    grid-template-areas: "compra-venta" "asesoramiento-legal" "financiamiento" "tasaciones";
+  }
+  .services .services-grid .service-card {
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .services .services-grid .service-card .service-grid {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0 auto 10px;
+  }
+  .services .services-grid .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .services .services-grid .service-card p {
+    font-size: 0.85rem;
   }
 }
 

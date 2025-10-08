@@ -2,7 +2,7 @@
 //y le vamos pasando los parametros que vayan cambiando
 //para utilizarlo hay que usarlo en un media y llamarlo como @include flex(wrap,row,center,center, 16px);
 
-@mixin flex( $direction, $justify, $items, $wrap, $gap){
+@mixin flex($direction, $justify, $items, $wrap, $gap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -11,7 +11,7 @@
     gap: $gap;
 }
 
-@mixin grid($col,$row,$justify,$align){
+@mixin grid($col, $row, $justify, $align) {
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
@@ -19,5 +19,9 @@
     align-items: $align;
 }
 
-
-
+@mixin hero-section {
+    height: 400px;
+    background-position: center center;
+    @include flex(column, center, center, none, none);
+    padding: 0 15px;
+}
